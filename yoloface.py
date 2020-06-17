@@ -115,7 +115,7 @@ def _main():
             #print('[i] ==> Output file is stored at', os.path.join(args.output_dir, output_file))
             cv2.waitKey(1000)
             break
-        if(count==1):
+        if(count==30):  #change this to 1 for image
 
             # Create a 4D blob from a frame.
             blob = cv2.dnn.blobFromImage(frame, 1 / 255, (IMG_WIDTH, IMG_HEIGHT),
